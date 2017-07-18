@@ -188,15 +188,15 @@ var draw = function (el, instance, dispatch_) {
   // Fade all but the current sequence, and show it in the breadcrumb trail.
   function mouseover(d) {
 
-    //var percentage = (100 * d.value / totalSize).toPrecision(3);
-    //var percentageString = percentage + "%";
-    //if (percentage < 0.1) {
-    //  percentageString = "< 0.1%";
-    //}
+    var percentage = (100 * d.value / totalSize).toPrecision(3);
+    var percentageString = percentage + "% contribution to total score";
+    if (percentage < 0.1) {
+      percentageString = "< 0.1% contribution to total score";
+    }
 
     //var percentage = (d.value).toPrecision(3);
-	  var percentage = (d.value/utils.depthOf(d)).toPrecision(3);
-    var percentageString = "Score: " + percentage;
+    //var percentage = (d.value/utils.depthOf(d)).toPrecision(3);
+    //var percentageString = "Score: " + percentage;
 	  
     var countString = [
         '<span style = "font-size:.7em">',
