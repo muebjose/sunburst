@@ -190,8 +190,8 @@ export default function (el, instance, dispatch_) {
     //  percentageString = "< 0.1%";
     //}
     
-    var totalvalue = (d.value).toPrecision(3);
-    var percentageString = totalvalue;
+    //var totalvalue = (d.value).toPrecision(3);
+    var percentageString = "Score: " + (d.value).toPrecision(3);
     
     
     var countString = [
