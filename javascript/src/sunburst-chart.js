@@ -184,12 +184,16 @@ export default function (el, instance, dispatch_) {
   // Fade all but the current sequence, and show it in the breadcrumb trail.
   function mouseover(d) {
 
-    var percentage = (100 * d.value / totalSize).toPrecision(3);
-    var percentageString = percentage + "%";
-    if (percentage < 0.1) {
-      percentageString = "< 0.1%";
-    }
-
+    //var percentage = (100 * d.value / totalSize).toPrecision(3);
+    //var percentageString = percentage + "%";
+    //if (percentage < 0.1) {
+    //  percentageString = "< 0.1%";
+    //}
+    
+    var totalvalue = (d.value).toPrecision(3);
+    var percentageString = totalvalue;
+    
+    
     var countString = [
         '<span style = "font-size:.7em">',
         format("1.2s")(d.value) + ' of ' + format("1.2s")(totalSize),
