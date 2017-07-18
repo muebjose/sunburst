@@ -189,9 +189,9 @@ var draw = function (el, instance, dispatch_) {
   function mouseover(d) {
 
     var percentage = (100 * d.value / totalSize).toPrecision(3);
-    var percentageString = percentage + "% contribution to total score";
+    var percentageString = percentage + "% contribution to score";
     if (percentage < 0.1) {
-      percentageString = "< 0.1% contribution to total score";
+      percentageString = "< 0.1% contribution to score";
     }
 
     //var percentage = (d.value).toPrecision(3);
