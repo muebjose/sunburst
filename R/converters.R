@@ -1,5 +1,5 @@
 #' @keywords internal
-csv_to_hier <- function(csv, delim = "++") {
+csv_to_hier <- function(csv, delim = "~+~") {
   df <- dplyr::bind_rows(
     lapply(
       strsplit(as.character(csv[[1]]), delim),
