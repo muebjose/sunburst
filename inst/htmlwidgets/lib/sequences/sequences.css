@@ -38,6 +38,6 @@
   color: #666;
   z-index: 999;
   font-size: 1em;
-  word-wrap: break-word;
+  word-wrap: normal;
   pointer-events: none;
 }
