@@ -194,7 +194,8 @@ var draw = function (el, instance, dispatch_) {
     //  percentageString = "< 0.1%";
     //}
 
-    var percentage = (d.value/d.size).toPrecision(3);
+    //var percentage = (d.value).toPrecision(3);
+	  var percentage = (d.value/utils.depthOf(d)).toPrecision(3);
     var percentageString = "Score: " + percentage;
 	  
     var countString = [
